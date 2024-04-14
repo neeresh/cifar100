@@ -1,7 +1,7 @@
 from cifar100 import TrainModel
 
 
-class CIFAR100SurrogateModels:
+class CIFAR100Models:
 
     def __init__(self, models, file_path):
         self.models = models
@@ -17,7 +17,7 @@ class CIFAR100SurrogateModels:
 
         return temp_dict
 
-    def get_surrogate_models(self):
+    def get_models(self):
         """
         Syntax to load desired models
         models = [
@@ -26,8 +26,6 @@ class CIFAR100SurrogateModels:
             ('resnext29', '_2x64d'), ('resnext29', '_32x4d'), ('simpledla', None),
             ('densenet', 121), ('preactresnet', 18), ('dpn', 92), ('dla', None)
         ]
-
-        filepath = blackboxattacks/surrogatemodels/...
         """
 
         print(f"Loading models from {self.filepath}")
