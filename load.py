@@ -1,4 +1,4 @@
-from cifar100_surrogate_models import TrainModel
+from cifar100 import TrainModel
 
 
 class CIFAR100SurrogateModels:
